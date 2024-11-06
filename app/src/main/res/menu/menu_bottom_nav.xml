@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/trangchinh"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Trang chính"/>
+    <item
+        android:id="@+id/video"
+        android:icon="@drawable/baseline_date_range_24"
+        android:title="Lịch"/>
+    <item
+        android:id="@+id/canhan"
+        android:icon="@drawable/baseline_person_24"
+        android:title="Cá nhân"/>
+</menu>

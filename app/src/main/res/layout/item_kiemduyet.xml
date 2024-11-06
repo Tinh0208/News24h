@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:elevation="8dp"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    android:layout_height="110dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/design_default_color_on_primary">
+
+        <TextView
+            android:id="@+id/News_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:visibility="invisible"
+            app:layout_constraintStart_toEndOf="@+id/txt_News"
+            app:layout_constraintTop_toBottomOf="@+id/txt_NewsDec" />
+
+        <TextView
+            android:id="@+id/kiemduyet_title"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="15dp"
+            android:text="Title"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/kiemduyet_anh"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/kiemduyet_anh"
+            app:layout_constraintTop_toTopOf="@+id/kiemduyet_anh"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/kiemduyet_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Author"
+            android:textSize="18dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/txt_NewsDate"
+            app:layout_constraintStart_toStartOf="@+id/txt_NewsDate" />
+
+
+        <TextView
+            android:id="@+id/kiemduyet_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Author"
+            android:textSize="18dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/txt_NewsDate"
+            app:layout_constraintStart_toStartOf="@+id/txt_NewsDate" />
+
+
+        <ImageView
+            android:id="@+id/kiemduyet_anh"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/kiemduyet_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/kiemduyet_title"
+            app:layout_constraintStart_toStartOf="@+id/kiemduyet_anh" />
+
+        <TextView
+            android:id="@+id/txt_NewsDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="TextView"
+            android:visibility="invisible"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/kiemduyet_title"
+            app:layout_constraintTop_toBottomOf="@+id/kiemduyet_title" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kiemduyet_title">
+
+            <ImageView
+                android:id="@+id/img_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/baseline_cancel_24"
+                android:layout_marginRight="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/txt_NewsTitle"
+                app:layout_constraintTop_toBottomOf="@+id/txt_NewsTitle" />
+
+            <ImageView
+                android:id="@+id/img_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/baseline_check_24"
+                app:layout_constraintEnd_toEndOf="@+id/txt_NewsTitle"
+                app:layout_constraintTop_toBottomOf="@+id/txt_NewsTitle" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

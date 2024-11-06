@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Activity.RegisterActivity">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/btnBack1"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Back"
+                android:src="@drawable/baseline_logout_24" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationViewLogo"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/read_news" />
+        </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textregister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/baloo2_semibold"
+                android:text="Đăng Ký"
+                android:textColor="#FF3D00"
+                android:textSize="40dp" />
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/edit_text"
+                android:backgroundTint="#FFFAFA"
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:fontFamily="@font/baloo2_semibold"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingEnd="20dp"
+                android:drawablePadding="5dp"
+                android:paddingTop="4dp"
+                android:paddingStart="5dp"
+                android:textSize="20dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/et_fullname"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/edit_text"
+                android:backgroundTint="#FFFAFA"
+                android:drawableLeft="@drawable/baseline_account_circle_24"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/baloo2_semibold"
+                android:hint="Họ Tên"
+                android:inputType="text"
+                android:longClickable="false"
+                android:paddingStart="5dp"
+                android:paddingTop="4dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/edit_text"
+                android:backgroundTint="#FFFAFA"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/baloo2_semibold"
+                android:hint="Mật Khẩu"
+                android:inputType="textPassword"
+                android:longClickable="false"
+                android:paddingStart="5dp"
+                android:paddingTop="4dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/et_confirmpassword"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/edit_text"
+                android:backgroundTint="#FFFAFA"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/baloo2_semibold"
+                android:hint="Nhập Lại Mật Khẩu"
+                android:inputType="textPassword"
+                android:longClickable="false"
+                android:paddingStart="5dp"
+                android:paddingTop="4dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+
+
+            <android.widget.Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/edit_text"
+                android:backgroundTint="#FF3D00"
+                android:fontFamily="@font/baloo2_semibold"
+                android:text="Đăng ký"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="32dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Bạn đã có tài khoản ?"
+                android:fontFamily="@font/baloo2_semibold"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#FF1100"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/baloo2_semibold"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="Đăng nhập"/>
+        </LinearLayout>
+
+       <!-- <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/register2" />-->
+
+
+    </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>
